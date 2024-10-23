@@ -53,7 +53,6 @@ public class AltTechTask {
             print(result);
         }
     }
-
     static void print(String text) {
         System.out.println("\"" + text + "\"");
     }
