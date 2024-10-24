@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class AltTechTask {
@@ -54,6 +55,8 @@ public class AltTechTask {
         }
     }
     static void print(String text) {
-        System.out.println("\"" + text + "\"");
+        if (text.length() > 40)
+            System.out.println("\"" + text.substring(0,40) + "..." + "\"");
+
     }
 }
