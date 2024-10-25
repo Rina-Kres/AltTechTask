@@ -55,8 +55,8 @@ public class AltTechTask {
         }
     }
     static void print(String text) {
-        if (text.length() > 40)
-            System.out.println("\"" + text.substring(0,40) + "..." + "\"");
-
+        if (text.length() > 40) {
+            System.out.println("\"" + text.substring(0, 40) + "..." + "\"");
+        } else System.out.println("\"" + text + "\"");
     }
 }
