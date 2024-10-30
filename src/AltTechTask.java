@@ -35,7 +35,7 @@ public class AltTechTask {
         } else {
             throw new Exception("Некооректный знак действия");
         }
-
+        if (data[0].length() > 10 || data[1].length() > 10) throw new Exception("Не больше 10 символов");
         if (action == '*' || action == '/') {
             if (data[1].contains("\"")) throw new Exception("Умножение и деление возможно на число без кавычек");
         }
